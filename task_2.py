@@ -13,11 +13,12 @@ def sum_digits_dividing_number():
 list_odd_numbers = []
 for i in range(1000):
     if i % 2 == 1:
-        list_odd_numbers.append(i**3)
+        list_odd_numbers.append(i ** 3)
+
 print(list_odd_numbers)
 print(sum_digits_dividing_number())
 
 for j in range(len(list_odd_numbers)):
-    list_odd_numbers[j] += 7
+    list_odd_numbers[j] += 17
 
 print(sum_digits_dividing_number())
