@@ -7,11 +7,11 @@ clock = pygame.time.Clock()
 
 
 class TrafficLight:
-    colors = [(255, 0, 0), (255, 255, 0), (0, 255, 0)]
+    __colors = [(255, 0, 0), (255, 255, 0), (0, 255, 0)]
     times_color = [7, 2, 5]
     def running(self):
         while True:
-            for color, t in zip(TrafficLight.colors, TrafficLight.times_color):
+            for color, t in zip(TrafficLight.__colors, TrafficLight.times_color):
                 screen.fill(color)
                 pygame.display.update()
                 time.sleep(t)
